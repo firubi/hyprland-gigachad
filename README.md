@@ -16,7 +16,7 @@ These are my dotfiles for Hyprland. Currently configs are messy so will upload w
 - Bluetooth control - kcmshell6
 - Network control - nm-applet
 
-<img width="2560" height="1440" alt="satty-20250727-21:11:43" src="https://github.com/user-attachments/assets/7eebfa84-5470-44a0-a9b2-e52e177d0a7d" />
+<img width="2560" height="1440" alt="satty-20250727-21:29:57" src="https://github.com/user-attachments/assets/fba79923-fec7-452a-ab23-9816059af734" />
 
 ### Theming
 I have KDE installed besides, and use the KDE system settings for general theming. SwayNC, waybar, wofi and firefox are themed through pywal16 (and pywalfox for firefox). Waybar and pywal16 setup is heavily inspired from [Whiteshadow's Configuration](https://github.com/Alexays/Waybar/wiki/Examples#whiteshadows-configuration) on waybar example page. 
