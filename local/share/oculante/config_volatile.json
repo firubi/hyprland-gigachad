@@ -1,0 +1,43 @@
+{
+  "favourite_images": [],
+  "recent_images": [
+    "/home/firubi/Pictures/Screenshots/2025-07-25_10-44-16.png",
+    "/home/firubi/Pictures/Screenshots/2025-07-16_19-45-52.png",
+    "/home/firubi/Pictures/Screenshots/satty-20250727-16:56:43.png",
+    "/home/firubi/Pictures/Screenshots/satty-20250727-16:37:19.png",
+    "/home/firubi/Pictures/Screenshots/satty-20250727-16:29:25.png",
+    "/home/firubi/Pictures/Screenshots/satty-20250727-16:28:30.png",
+    "/home/firubi/.local/share/nwg-dock-hyprland/images/task-multiple.svg",
+    "/home/firubi/Downloads/task-single_gray.svg",
+    "/home/firubi/Downloads/task-multiple_gray.svg",
+    "/home/firubi/Pictures/Wallpapers/20.jpg",
+    "/home/firubi/Pictures/wallhaven-x8j2y3.jpg",
+    "/home/firubi/Pictures/Real-wallpapers/wallhaven-5yw9x9.png"
+  ],
+  "window_geometry": [
+    [
+      0,
+      0
+    ],
+    [
+      1251,
+      667
+    ]
+  ],
+  "last_open_directory": "",
+  "folder_bookmarks": [],
+  "encoding_options": [
+    {
+      "Jpg": {
+        "quality": 75
+      }
+    },
+    "WebP",
+    {
+      "Png": {
+        "compressionlevel": "Default"
+      }
+    },
+    "Bmp"
+  ]
+}
