@@ -1,0 +1,2 @@
+# hyprland-gigachad
+d
