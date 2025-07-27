@@ -1,0 +1,9 @@
+#[general]
+#import = ["~/.config/alacritty/themes/themes/gnome_terminal.toml"]
+
+[window]
+opacity = 1.0
+
+[window.dimensions]
+columns = 110
+lines = 35

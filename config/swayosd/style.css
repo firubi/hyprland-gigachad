@@ -1,0 +1,42 @@
+@import url('../../.cache/wal/colors-waybar.css');
+
+window#osd {
+    border-radius: 18px;
+    border: 0px solid @border_medium;
+    background: alpha(@background,0.6);
+
+    #container {
+    margin: 16px;
+    }
+
+    image,
+    label {
+        color: @color7;
+    }
+
+    progressbar:disabled,
+    image:disabled {
+        opacity: 0.5;
+    }
+
+    progressbar {
+        min-height: 6px;
+        border-radius: 999px;
+        background: transparent;
+        border: none;
+    }
+
+    trough {
+        min-height: inherit;
+        border-radius: inherit;
+        border: none;
+        background: alpha(@color7,0.8);
+    }
+
+    progress {
+        min-height: inherit;
+        border-radius: inherit;
+        border: none;
+        background: alpha(@color7,0.8);
+    }
+}

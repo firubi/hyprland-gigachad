@@ -1,0 +1,15 @@
+[config]
+allow_images=true
+width=450
+show=drun
+prompt=Search
+height=1305
+term=alacritty
+hide_scroll=true
+print_command=true
+insensitive=true
+columns=1
+no_actions=true
+x=5
+y=5
+monitor=DP-4
