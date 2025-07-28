@@ -5,11 +5,11 @@ These are my dotfiles for Hyprland. Currently configs are messy so will upload w
 - Distro - Arch (with CachyOS repositories)
 - Shell - bash (with Starship)
 - Terminal - Alacritty
-- Screenshot - grim/lurp with satty
+- Screenshot - grim/slurp with satty
 - File manager - Dolphin
 - Image viewer - oculante
 - Document viewer - Okular
-- Video player - MPV
+- Video player - mpv
 - App launcher - wofi
 - Notification daemon - SwayNC
 - Audio control - pavucontrol-qt
