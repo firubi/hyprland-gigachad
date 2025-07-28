@@ -4,7 +4,7 @@ These are my dotfiles for Hyprland. Currently configs are messy so will upload w
 # Programs
 - Distro - Arch (with CachyOS repositories)
 - Shell - bash (with Starship)
-- Terminal - Alacritty
+- Terminal - foot
 - Screenshot - grim/slurp with satty
 - File manager - Dolphin
 - Image viewer - oculante
