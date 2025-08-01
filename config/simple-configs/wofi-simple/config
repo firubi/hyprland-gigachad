@@ -1,0 +1,16 @@
+[config]
+show=drun
+allow_images=true
+term=alacritty
+width=400
+height=400
+always_parse_args=true
+show_all=false
+term=kitty
+hide_scroll=true
+print_command=true
+insensitive=true
+prompt=Search
+columns=1
+monitor=DP-4
+no_actions=true

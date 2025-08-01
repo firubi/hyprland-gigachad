@@ -7,9 +7,9 @@ menu() {
 main() {
     choice=$(menu | wofi -c ~/.config/wofi/wallpaper -s ~/.config/wofi/style-wallpaper.css --show dmenu --prompt "Select Wallpaper:" )
     selected_wallpaper=$(echo "$choice" | sed 's/^img://')
-    swww img -o DP-4 "$selected_wallpaper" --transition-type any --transition-fps 60 --transition-duration .5
-    swww img -o HDMI-A-2 /home/firubi/Pictures/Real-wallpapers/wallhaven-xe5myl.jpg --transition-type any --transition-fps 60 --transition-duration .5 #WALLPAPER NO CHANGE ON 2ND MONITOR
-    wal -i "$selected_wallpaper" -n --cols16
+    swww img -o DP-4 "$selected_wallpaper" --transition-type fade --transition-fps 120 --transition-duration 1.5
+    swww img -o HDMI-A-2 /home/firubi/Pictures/Real-wallpapers/wallhaven-xe5myl.jpg --transition-type any --transition-fps 120 --transition-duration 1.5 #WALLPAPER NO CHANGE ON 2ND MONITOR
+    wal -i "$selected_wallpaper" -n -e --cols16
     swaync-client --reload-css
     pywalfox update
 }

@@ -21,7 +21,7 @@
         "custom/notification": {
             "tooltip": false,
             "format": "",
-            "on-click": "swaync-client -t & killall bluetui wiremix btm wofi",
+            "on-click": "swaync-client -t & killall kcmshell6 pavucontrol-qt plasma-systemmonitor",
             "escape": true
         },
         "custom/todo": {
@@ -38,10 +38,16 @@
             "tooltip-format": "{:%e %B %Y}"
         },
         "custom/cliphist": {
-            "on-click": "cliphist list | wofi --dmenu --conf ~/.config/wofi/config -theme ~/.config/wofi/style.css | cliphist decode | wl-copy",
+            "on-click": "cliphist list | rofi -dmenu -theme ~/.config/rofi/launchers/type-2/style-6.rasi | cliphist decode | wl-copy",
             "format": "",
             "tooltip": true,
             "tooltip-format": "Clipboard history"
+        },
+        "custom/btm": {
+            "on-click": "killall btm || alacritty --class btm -e btm & killall pavucontrol-qt blueman-manager",
+            "format": "󰟌",
+            "tooltip": true,
+            "tooltip-format": "Mission Center"
         },
         "custom/reload": {
             "on-click": "hyprctl reload & swaync & notify-send -i /home/firubi/Pictures/Icons/arch.png 'Hyprland' 'Reloaded configuration successfully!'",
@@ -50,7 +56,7 @@
             "tooltip-format": "Reload environment"
         },
         "custom/overview": {
-            "on-click": "~/.config/hypr/toggle_wofi.sh & killall bluetui wiremix btm wofi",
+            "on-click": "~/.config/hypr/toggle_rofi.sh",
             "format": "󰣇",
             "tooltip": true,
             "tooltip-format": "App launcher"
@@ -61,8 +67,9 @@
             "tooltip": true,
             "tooltip-format": "Nightlight"
         },
+
         "custom/grimblast": {
-            "on-click": "~/.config/waybar/screenshot.sh",
+            "on-click": "grimblast --cursor --notify copysave area ~/Pictures/Screenshots/$(date +'%Y-%m-%d_%H-%M-%S').png",
             "format": "󰹑",
             "tooltip": true,
             "tooltip-format": "Screenshot"
@@ -96,10 +103,10 @@
             "tooltip-format": "{controller_alias}\t{controller_address}",
             "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{device_enumerate}",
             "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
-            "on-click": "killall bluetui || alacritty -T bluetui -e bluetui & killall wiremix btm wofi",
+            "on-click": "killall kcmshell6 || kcmshell6 bluetooth & killall pavucontrol-qt plasma-systemmonitor",
         },
         "cpu": {
-            "on-click": "killall btm || alacritty -T bottom -e btm & killall bluetui wiremix wofi",
+            "on-click": "killall plasma-systemmonitor || plasma-systemmonitor & killall kcmshell6 pavucontrol-qt",
             "interval": 30,
             "format": "\uf4bc{usage:>3}%",
             "states": {
@@ -108,16 +115,16 @@
             },
         },
         "pulseaudio": {
-            "format": "\udb81\udd7e {volume}%",
+            "format": "\udb81\udd7e",
             "format-muted":"\udb81\udf5f",
             "tooltip-format": "{desc} • {volume}%",
             "on-scroll-up":"swayosd-client --output-volume 2 --max-volume 100",
             "on-scroll-down":"swayosd-client --output-volume -2 --max-volume 100",
             "on-click-right":"swayosd-client --output-volume mute-toggle",
-            "on-click": "killall wiremix || alacritty -T wiremix -e wiremix -v output & killall bluetui btm wofi",
+            "on-click": "killall pavucontrol-qt || pavucontrol-qt --tab=3 & killall kcmshell6 plasma-systemmonitor",
         },
         "memory": {
-            "on-click": "killall btm || alacritty -T bottom -e btm & killall bluetui wiremix wofi",
+            "on-click": "killall plasma-systemmonitor || plasma-systemmonitor & killall kcmshell6 pavucontrol-qt",
             "interval": 5,
             "format": "\uefc5  {used:0.1f}G",
             "states": {

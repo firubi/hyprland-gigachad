@@ -1,0 +1,21 @@
+{
+    "label" : "lock",
+    "action" : "hyprlock --config ~/.config/hypr-simple/hyprlock.conf",
+    "keybind" : "l"
+}
+{
+    "label" : "reboot",
+    "action" : "systemctl reboot",
+    "keybind" : "r"
+}
+
+{
+    "label" : "logout",
+    "action" : "hyprctl dispatch exit",
+    "keybind" : "e"
+}
+{
+    "label" : "shutdown",
+    "action" : "systemctl poweroff",
+    "keybind" : "s"
+}

@@ -1,0 +1,28 @@
+@define-color border_light rgba(255, 255, 255, 0.18);
+@define-color border_dark rgba(0, 0, 0, 0.06);
+@define-color border_medium alpha(@border_light, 0.5);
+@define-color theme_fg_secondary rgba(215, 220, 225, 0.78);
+@define-color accent_color rgba(10, 132, 255, 0.8);
+
+@define-color foreground #cddced;
+@define-color background rgba(40, 40, 40, 1);
+@define-color cursor #cddced;
+
+@define-color color0 #252039;
+@define-color color1 #A394A3;
+@define-color color2 #C8A8B0;
+@define-color color3 #B3BDDF;
+@define-color color4 #CBBDCA;
+@define-color color5 #B5C4D6;
+@define-color color6 #99D3F2;
+@define-color color7 alpha(@theme_fg,0.8);
+@define-color color8 #8f9aa5;
+@define-color color9 alpha(@theme_fg_secondary,0.8);
+@define-color color10 #C8A8B0;
+@define-color color11 #B3BDDF;
+@define-color color12 #CBBDCA;
+@define-color color13 #B5C4D6;
+@define-color color14 #99D3F2;
+@define-color color15 #cddced;
+
+

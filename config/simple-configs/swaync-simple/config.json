@@ -1,0 +1,114 @@
+{
+  "$schema": "/etc/xdg/swaync/configSchema.json",
+  "positionX": "right",
+  "positionY": "top",
+  "layer": "overlay",
+  "control-center-layer": "top",
+  "layer-shell": true,
+  "cssPriority": "application",
+  "control-center-width": 500,
+  "control-center-height": 1200,
+  "control-center-margin-top": 5,
+  "control-center-margin-bottom": 5,
+  "control-center-margin-right": 5,
+  "control-center-margin-left": 5,
+  "notification-2fa-action": true,
+  "notification-inline-replies": false,
+  "notification-window-width": 500,
+  "notification-icon-size": 48,
+  "notification-body-image-height": 240,
+  "notification-body-image-width": 240,
+  "timeout": 8,
+  "timeout-low": 4,
+  "timeout-critical": 0,
+  "fit-to-screen": false,
+  "keyboard-shortcuts": true,
+  "image-visibility": "when-available",
+  "transition-time": 150,
+  "hide-on-clear": false,
+  "hide-on-action": false,
+  "script-fail-notify": true,
+  "widgets": [
+    "mpris",
+    "volume",
+    "menubar",
+    "title",
+    "notifications",
+    "buttons-grid"
+  ],
+  "widget-config": {
+    "title": {
+      "text": "Notifications",
+      "clear-all-button": true,
+      "button-text": "Clear"
+    },
+    "mpris": {
+      "image-size": 80,
+      "image-radius": 0
+    },
+    "volume": {
+      "label": "",
+      "show-per-app": true,
+      "show-per-app-icon": true,
+      "show-per-app-label": true,
+      "step": 5
+    },
+    "menubar": {
+      "menu#effects": {
+        "label": "            󰋍  EasyEffects Presets",
+        "position": "left",
+        "animation-type": "slide_down",
+        "animation-duration": 200,
+        "actions": [
+          {
+            "label": "Sennheiser",
+            "command": "easyeffects -l sennheiser && notify-send -i /home/firubi/Pictures/Icons/easy.png 'Easyeffects' 'Preset set to Sennheiser'"
+          },
+          {
+            "label": "Beyerdynamic",
+            "command": "easyeffects -l beyerdynamics && notify-send -i /home/firubi/Pictures/Icons/easy.png 'Easyeffects' 'Preset set to Beyerdynamic'"
+          },
+          {
+            "label": "Logitech",
+            "command": "easyeffects -l logitech && notify-send -i /home/firubi/Pictures/Icons/easy.png 'Easyeffects' 'Preset set to Logitech'"
+          },
+          {
+            "label": "Maxwell",
+            "command": "easyeffects -l maxwell && notify-send -i /home/firubi/Pictures/Icons/easy.png 'Easyeffects' 'Preset set to Maxwell'"
+          }
+        ]
+      }
+    },
+    "buttons-grid": {
+      "actions": [
+        {
+          "label": "󰂛",
+          "command": "swaync-client -d",
+          "type": "toggle",
+          "tooltip": "Do not disturb"
+        },
+        {
+          "label": "󰴱",
+          "command": "hyprpicker -a",
+          "tooltip": "Color picker"
+        },
+        {
+          "label": "󰊗",
+          "command": "~/.config/hypr/gamemode.sh",
+          "type": "toggle",
+          "tooltip": "Gamemode"
+        },
+        {
+          "label": "󰸉",
+          "command": "swaync-client -t -sw && ~/.config/hypr-simple/wallpaper.sh",
+          "tooltip": "Waypaper"
+        },
+        {
+          "label": "⏻",
+          "command": "swaync-client -t -sw && ~/.config/hypr-simple/toggle_wlogout.sh",
+          "tooltip": "Powermenu"
+        }
+      ]
+    }
+  }
+}

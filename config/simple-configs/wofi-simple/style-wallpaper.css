@@ -1,0 +1,100 @@
+@import url('/home/firubi/.cache/wal/colors-waybar.css');
+@define-color mauve  @color9;
+@define-color red  @color9;
+@define-color lavender  @color7;
+@define-color text  @color7;
+@define-color theme_bg #000000; /* Panel/Background 0.8784313725*/
+@define-color accent_color_border @color9; /* rgba(10, 132, 255, 0.8);  Accent Active */
+@define-color accent_color alpha(@color9,.8); /* #198de5;  Accent Hover */
+* {
+    /* Install using "pacman -S ttf-zed-mono-nerd" */
+    font-family: 'JetBrainsMono Nerd Font', monospace;
+    font-weight: 500;
+    font-size: 14px;
+    background-color:transparent;
+}
+
+window {
+    all:unset;
+    padding: 20px;
+    border-radius: 0px;
+    background-color: alpha(@theme_bg,.8);
+}
+#inner-box {
+    margin: 2px;
+    padding: 5px;
+    border: none;
+
+}
+#outer-box {
+    border: 2px solid @accent_color_border;
+}
+#scroll {
+    margin: 0px;
+    padding: 30px;
+    border: none;
+}
+
+
+
+
+/* Search results container */
+#inner-box {
+margin: 0px;
+padding: 0px;
+border: none;
+}
+
+
+/* Input */
+#input {
+padding: 5px 5px;
+background: @accent_color;
+border: none;
+color: @text;
+border-radius: 0;
+}
+
+
+#input image {
+    border: none;
+    color: @red;
+    padding-right:10px;
+}
+#input * {
+    border: none;
+    outline: none;
+}
+
+#input:focus {
+    outline: none;
+    border: none;
+
+    border-radius:0;
+}
+#text {
+    margin: 5px;
+    border: none;
+    color: @text;
+    outline: none;
+}
+#entry {
+    all:unset;
+    padding: 20 0 20 45;
+}
+#entry arrow {
+    border: none;
+    color: @lavender;
+
+}
+#entry:selected {
+    border: none;
+    border-radius: 0px;
+    background-color: @accent_color;
+}
+#entry:selected #text {
+    color: @mauve;
+}
+#entry:drop(active) {
+    background-color: @lavender !important;
+}

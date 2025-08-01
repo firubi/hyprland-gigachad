@@ -1,0 +1,99 @@
+@import url('/home/firubi/.cache/wal/colors-waybar.css');
+
+@define-color text-dimmed #5c5c5c;
+@define-color surface0 #323232;
+@define-color surface1 #222;
+@define-color highlight #64bad7;
+@define-color highlight-border #64bad7;
+@define-color accent_color_border @color9; /* rgba(10, 132, 255, 0.8);  Accent Active */
+@define-color accent_color alpha(@color9,.8); /* #198de5;  Accent Hover */
+@define-color mauve  @color9;
+@define-color red  @color9;
+@define-color lavender  @color7;
+@define-color text  @color15;
+@define-color theme_bg #000000; /* Panel/Background 0.8784313725*/
+@keyframes fadeIn {
+    0% {
+    }
+    100% {
+    }
+}
+
+
+* {
+    /* Install using "pacman -S ttf-zed-mono-nerd" */
+    font-family: 'JetBrainsMono Nerd Font', monospace;
+    font-weight: 500;
+    font-size: 14px;
+    background-color:transparent;
+}
+
+window {
+    all:unset;
+    padding: 20px;
+    border-radius: 0px;
+    background-color: alpha(@theme_bg,.8);
+}
+
+/* Container inside a window */
+#outer-box {
+border: 2px solid @accent_color_border;
+}
+
+/* Search results container */
+#inner-box {
+margin: 0px;
+padding: 0px;
+border: none;
+}
+
+
+/* Input */
+#input {
+padding: 5px 5px;
+background: @accent_color;
+border: none;
+color: @text;
+border-radius: 0;
+}
+
+#input image {
+border: none;
+color: @text;
+}
+
+/* Search icon */
+#input image.left {
+/* '-gtk-icon-size' doesn't have effect for some reason */
+-gtk-icon-transform: scale(0.8);
+}
+
+/* Text */
+#text {
+margin: 2px;
+border: none;
+color: @text;
+}
+
+#entry {
+border: none;
+margin: 0px;
+padding: 5px;
+}
+#entry arrow {
+border: none;
+color: @lavender;
+
+}
+#entry:selected {
+box-shadow: 1px 1px 5px rgba(255,255,255, 0);
+border: none;
+border-radius: 0px;
+background-color:transparent;
+}
+#entry:selected #text {
+color: @mauve;
+}
+#entry:drop(active) {
+background-color: @lavender !important;
+}

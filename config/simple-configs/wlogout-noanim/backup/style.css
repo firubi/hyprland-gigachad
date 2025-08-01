@@ -1,0 +1,68 @@
+@import url('../../.config/waybar/colors-waybar.css');
+
+@define-color foreground rgb(220, 220, 220);
+@define-color button rgba(0, 0, 0, 0.5);
+
+* {
+    background-image: none;
+    background:none;
+    border:none;
+    border-radius: 0;
+    font-family: Mononoki Nerd Font;
+    font-weight: 200;
+}
+window {
+    background-color: alpha(@background,.8);
+    margin:1em;
+}
+
+grid {
+    background-color: alpha(@background,.8);
+    border: 0px solid @border_light;
+    border-radius:18px;
+    padding:5em;
+}
+
+button {
+
+    margin: 1.5rem;
+    font-size:2.5em;
+    box-shadow: inset 0rem 0px rgba(0, 0, 0, 0);
+    transition: box-shadow .30s ease-in-out, background-color .30s ease-in-out;
+    background-color: @button;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 15%;
+    border-radius: 18;
+
+}
+
+button:focus, button:active, button:hover {
+    background-color: alpha(@accent_color,0.9);
+    border: 0px solid @border_light;
+    box-shadow: none;
+}
+
+#lock {
+background-image: image(url("/home/firubi/.config/wlogout/icons/lock-hover.png"), url("/usr/share/wlogout/icons/lock.png"), url("/usr/local/share/wlogout/icons/lock.png"));
+}
+
+#logout {
+background-image: image(url("/home/firubi/.config/wlogout/icons/logout-hover.png"), url("/usr/share/wlogout/icons/logout.png"), url("/usr/local/share/wlogout/icons/logout.png"));
+}
+
+#suspend {
+background-image: image(url("/usr/share/wlogout/icons/suspend.png"), url("/usr/local/share/wlogout/icons/suspend.png"));
+}
+
+#hibernate {
+background-image: image(url("/usr/share/wlogout/icons/hibernate.png"), url("/usr/local/share/wlogout/icons/hibernate.png"));
+}
+
+#shutdown {
+background-image: image(url("/home/firubi/.config/wlogout/icons/power-hover.png"), url("/usr/share/wlogout/icons/shutdown.png"), url("/usr/local/share/wlogout/icons/shutdown.png"));
+}
+
+#reboot {
+background-image: image(url("/home/firubi/.config/wlogout/icons/restart-hover.png"), url("/usr/share/wlogout/icons/reboot.png"), url("/usr/local/share/wlogout/icons/reboot.png"));
+}

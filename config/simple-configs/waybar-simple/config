@@ -1,0 +1,74 @@
+{
+    "layer": "top",
+    "position": "top",
+    "height": 24,
+    "spacing": 5,
+
+    "modules-left": ["hyprland/workspaces", "memory"],
+    "modules-center": ["clock"],
+    "modules-right": ["tray", "hyprland/language", "bluetooth", "pulseaudio", "custom/notification"],
+
+    "hyprland/workspaces": {
+        "format": "<span size='larger'>{icon}</span>",
+        "on-click": "activate",
+        "format-icons": {
+            "active": "\uf444",
+            "default": "\uf4c3"
+        },
+        "icon-size": 10,
+        "sort-by-number": true,
+        "persistent-workspaces": {
+            "1": [],
+            "2": [],
+            "3": [],
+            "4": [],
+            "5": [],
+        }
+    },
+
+    "clock": {
+        "format": "{:%d.%m.%Y | %H:%M}"
+    },
+
+    "custom/notification": {
+        "tooltip": false,
+        "format": "",
+        "on-click": "swaync-client -t & killall kcmshell6 pavucontrol-qt plasma-systemmonitor",
+        "escape": true
+    },
+
+    "pulseaudio": {
+        "format": "\udb81\udd7e  {volume}%",
+        "format-muted":"\udb81\udf5f",
+        "tooltip-format": "{desc} • {volume}%",
+        "on-scroll-up":"swayosd-client --output-volume 2 --max-volume 100",
+        "on-scroll-down":"swayosd-client --output-volume -2 --max-volume 100",
+        "on-click-right":"swayosd-client --output-volume mute-toggle",
+        "on-click": "killall pavucontrol-qt || pavucontrol-qt --tab=3 & killall kcmshell6 plasma-systemmonitor",
+    },
+
+    "memory": {
+        "interval": 30,
+        "format": "\uf4bc  {used:0.1f}G"
+    },
+
+    "bluetooth": {
+        "format": "\udb80\udcaf",
+        "format-disabled": "\udb80\udcb2",
+        "format-connected": "\udb80\udcb1",
+        "tooltip-format": "{controller_alias}\t{controller_address}",
+        "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{device_enumerate}",
+        "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
+        "on-click": "killall kcmshell6 || kcmshell6 bluetooth & killall pavucontrol-qt",
+    },
+
+    "hyprland/language": {
+        "format": "{short}"
+    },
+
+    "tray": {
+        "icon-size": 16,
+        "spacing": 16,
+        "reverse-direction": true
+    },
+}
